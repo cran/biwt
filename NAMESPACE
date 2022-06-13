@@ -6,6 +6,9 @@ exportPattern(".")
 
 # Import all packages listed as Imports or Depends
 import(
-  rrcov,
+  robustbase,
   MASS
 )
+
+importFrom("stats", "dchisq", "mad", "mahalanobis", "pchisq")
+importFrom("robustbase", "covMcd")
